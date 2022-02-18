@@ -1,4 +1,4 @@
-package com.leslie.springbootrestserver;
+package com.leslie.springbootrestserver.controller;
 
 
 /* a little REST service that tests the Application start */
@@ -11,9 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class RestService {
+public class DefaultController {
 
-    public static final Logger logger = LoggerFactory.getLogger(RestService.class);
+    public static final Logger logger = LoggerFactory.getLogger(DefaultController.class);
 
     @GetMapping(value="/")
     public ResponseEntity<String> pong(){
